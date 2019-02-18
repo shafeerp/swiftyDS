@@ -10,6 +10,7 @@
 		B8DE76AC221B07B70089B988 /* SwiftyDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DE76A2221B07B70089B988 /* SwiftyDS.framework */; };
 		B8DE76B1221B07B70089B988 /* SwiftyDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE76B0221B07B70089B988 /* SwiftyDSTests.swift */; };
 		B8DE76B3221B07B70089B988 /* SwiftyDS.h in Headers */ = {isa = PBXBuildFile; fileRef = B8DE76A5221B07B70089B988 /* SwiftyDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8DE76BE221B08320089B988 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE76BD221B08320089B988 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B8DE76AB221B07B70089B988 /* SwiftyDSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyDSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DE76B0221B07B70089B988 /* SwiftyDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDSTests.swift; sourceTree = "<group>"; };
 		B8DE76B2221B07B70089B988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DE76BD221B08320089B988 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B8DE76A5221B07B70089B988 /* SwiftyDS.h */,
 				B8DE76A6221B07B70089B988 /* Info.plist */,
+				B8DE76BD221B08320089B988 /* Stack.swift */,
 			);
 			path = SwiftyDS;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B8DE76A1221B07B70089B988 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					B8DE76AA221B07B70089B988 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DE76BE221B08320089B988 /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		B8DE76B7221B07B70089B988 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shafeer.SwiftyDS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		B8DE76B8221B07B70089B988 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		B8DE76BA221B07B70089B988 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyDSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		B8DE76BB221B07B70089B988 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyDSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
