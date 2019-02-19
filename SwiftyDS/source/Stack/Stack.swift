@@ -8,17 +8,17 @@
 
 import Foundation
 
-open class Stack<T> : NSObject {
-    open var stackArray = Array<T>()
+public struct Stack<T>  {
+    public var stackArray = Array<T>()
     
-     open func push(_ itemToPush: inout T) {
+    public mutating func push(_ itemToPush: inout T) {
         self.stackArray.append(itemToPush)
     }
-    open func pop() -> T?  {
+    public mutating func pop() -> T?  {
         if self.stackArray.last != nil {
             let itemToReturn = self.stackArray.last
             self.stackArray.removeLast()
-            return itemToReturn 
+            return itemToReturn
         }
         else {
             return nil
