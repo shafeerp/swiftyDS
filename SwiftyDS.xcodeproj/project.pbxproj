@@ -11,6 +11,12 @@
 		B8DE76B1221B07B70089B988 /* SwiftyDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE76B0221B07B70089B988 /* SwiftyDSTests.swift */; };
 		B8DE76B3221B07B70089B988 /* SwiftyDS.h in Headers */ = {isa = PBXBuildFile; fileRef = B8DE76A5221B07B70089B988 /* SwiftyDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8DE76BE221B08320089B988 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE76BD221B08320089B988 /* Stack.swift */; };
+		B8DE7700221B15DB0089B988 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE76FF221B15DB0089B988 /* Queue.swift */; };
+		B8DE7702221BC9030089B988 /* CircularQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE7701221BC9030089B988 /* CircularQueue.swift */; };
+		B8DE7704221BDAC90089B988 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE7703221BDAC90089B988 /* PriorityQueue.swift */; };
+		B8DE7706221BDB2C0089B988 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE7705221BDB2C0089B988 /* Heap.swift */; };
+		B8DE770C221BDEE70089B988 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE770B221BDEE70089B988 /* LinkedList.swift */; };
+		B8DE770F221BDF400089B988 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE770E221BDF400089B988 /* Tree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +37,12 @@
 		B8DE76B0221B07B70089B988 /* SwiftyDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDSTests.swift; sourceTree = "<group>"; };
 		B8DE76B2221B07B70089B988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DE76BD221B08320089B988 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		B8DE76FF221B15DB0089B988 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		B8DE7701221BC9030089B988 /* CircularQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularQueue.swift; sourceTree = "<group>"; };
+		B8DE7703221BDAC90089B988 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		B8DE7705221BDB2C0089B988 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		B8DE770B221BDEE70089B988 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		B8DE770E221BDF400089B988 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +85,9 @@
 		B8DE76A4221B07B70089B988 /* SwiftyDS */ = {
 			isa = PBXGroup;
 			children = (
+				B8DE76FD221B100E0089B988 /* source */,
 				B8DE76A5221B07B70089B988 /* SwiftyDS.h */,
 				B8DE76A6221B07B70089B988 /* Info.plist */,
-				B8DE76BD221B08320089B988 /* Stack.swift */,
 			);
 			path = SwiftyDS;
 			sourceTree = "<group>";
@@ -87,6 +99,60 @@
 				B8DE76B2221B07B70089B988 /* Info.plist */,
 			);
 			path = SwiftyDSTests;
+			sourceTree = "<group>";
+		};
+		B8DE76FD221B100E0089B988 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE770D221BDF370089B988 /* Tree */,
+				B8DE770A221BDED90089B988 /* LinkedList */,
+				B8DE7709221BDE620089B988 /* Heap */,
+				B8DE7708221BDE530089B988 /* Stack */,
+				B8DE76FE221B15C40089B988 /* Queue */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		B8DE76FE221B15C40089B988 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE76FF221B15DB0089B988 /* Queue.swift */,
+				B8DE7701221BC9030089B988 /* CircularQueue.swift */,
+				B8DE7703221BDAC90089B988 /* PriorityQueue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		B8DE7708221BDE530089B988 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE76BD221B08320089B988 /* Stack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		B8DE7709221BDE620089B988 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE7705221BDB2C0089B988 /* Heap.swift */,
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
+		B8DE770A221BDED90089B988 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE770B221BDEE70089B988 /* LinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		B8DE770D221BDF370089B988 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE770E221BDF400089B988 /* Tree.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DE770F221BDF400089B988 /* Tree.swift in Sources */,
+				B8DE770C221BDEE70089B988 /* LinkedList.swift in Sources */,
 				B8DE76BE221B08320089B988 /* Stack.swift in Sources */,
+				B8DE7706221BDB2C0089B988 /* Heap.swift in Sources */,
+				B8DE7704221BDAC90089B988 /* PriorityQueue.swift in Sources */,
+				B8DE7702221BC9030089B988 /* CircularQueue.swift in Sources */,
+				B8DE7700221B15DB0089B988 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
